@@ -1,0 +1,16 @@
+@forward './profile';
+@forward './add_post';
+@forward './feed';
+@forward './post';
+@forward './people';
+@forward './chat';
+@forward './sign_up';
+@forward './sign_in';
+@forward './settings';
+@forward './notifications';
+@forward './follow';
+@forward './home';
+
+main {
+  background: var(--grey);
+}

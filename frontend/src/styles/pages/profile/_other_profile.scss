@@ -1,0 +1,39 @@
+.other-profile {
+  .follow-add-friend {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    transform: translate(-10px, -50px);
+
+    button {
+      background: var(--orange);
+      font-size: 1rem;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: var(--white);
+    }
+  }
+
+  .message {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--dark-grey);
+    padding: 5px 5px 15px 15px;
+    border-radius: 0 0 0 30px;
+
+    svg {
+      width: 40px;
+      fill: var(--light-grey);
+
+      .inner-chat-polygon {
+        fill: var(--dark-grey);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.friends-tab,
+.search-tab {
+  .search {
+    display: none;
+    padding: 20px;
+
+    input {
+      color: var(--white);
+      background: none;
+      border: none;
+      border-bottom: 2px solid var(--light-grey);
+      outline: none;
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+}

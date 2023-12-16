@@ -1,0 +1,22 @@
+@forward './friends';
+@forward './search';
+
+.people__page {
+  padding-bottom: 55px;
+
+  .tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+    background: var(--dark-grey);
+    padding: 20px;
+    font-size: 20px;
+
+    button {
+      font-size: 20px;
+      background: none;
+      border: none;
+    }
+  }
+}

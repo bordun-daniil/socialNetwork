@@ -1,0 +1,64 @@
+version: "3"
+
+services:
+  postgresql:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_PASSWORD=neon
+    volumes:
+      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./backend/.env
+    volumes:
+      - backend_static_volume:/usr/src/app/socialNetwork/static
+      - backend_media_volume:/usr/src/app/socialNetwork/media
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    depends_on:
+      - postgresql
+      - redis
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    env_file:
+      - ./frontend/.env
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    command: serve -s build -l 3000
+    depends_on:
+      - backend
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    volumes:
+      - backend_static_volume:/usr/src/app/socialNetwork/static
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    depends_on:
+      - frontend
+
+volumes:
+  backend_static_volume:
+  backend_media_volume:

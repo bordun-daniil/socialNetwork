@@ -1,0 +1,141 @@
+.chats__page {
+  padding: 20px;
+
+  .header {
+    display: flex;
+    color: var(--white);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-grey);
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .create-group-chat-icon {
+      font-size: 40px;
+      transition: all 0.5s ease 0s;
+      z-index: 1001;
+    }
+  }
+
+  .user-link {
+    padding-bottom: 20px;
+    position: relative;
+
+    .notification-circle {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: var(--orange);
+      right: 0;
+      border-radius: 100%;
+    }
+  }
+
+  .create-group-chat-tab {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--dark-grey);
+    transition: all 1s ease;
+    padding: 20px;
+
+    h2 {
+      color: var(--white);
+      padding-bottom: 10px;
+    }
+
+    .friends-list {
+      overflow: scroll;
+      height: 60%;
+      border-bottom: 2px solid var(--light-grey);
+      border-top: 2px solid var(--light-grey);
+      margin: 10px 0;
+    }
+
+    .user-link {
+      position: relative;
+      padding: 10px 0;
+      padding-bottom: unset;
+
+      .checkbox {
+        position: absolute;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+      }
+    }
+
+    form {
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        color: var(--light-grey);
+        font-size: 25px;
+        padding-right: 20px;
+      }
+
+      input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid var(--light-grey);
+        margin-bottom: 20px;
+        font-size: 25px;
+        color: var(--white);
+        outline: none;
+      }
+
+      .chat-icon {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: fit-content;
+
+        .load-icon {
+          color: var(--light-grey);
+          border-radius: 100%;
+          width: 50px;
+          height: 50px;
+          border: dashed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+        }
+
+        input {
+          display: none;
+        }
+
+        .icon {
+          width: 50px;
+          height: 50px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 100%;
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      button {
+        border: none;
+        background: none;
+        color: var(--white);
+        background: var(--orange);
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-size: 30px;
+        width: fit-content;
+        margin-top: 20px;
+      }
+    }
+  }
+}

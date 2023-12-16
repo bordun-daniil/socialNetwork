@@ -1,0 +1,26 @@
+.notifications__page {
+  padding: 20px;
+
+  h2 {
+    color: var(--white);
+    border-bottom: 2px solid var(--light-grey);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .friend-request {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--dark-grey);
+
+    .user-link {
+      padding-bottom: 10px;
+    }
+
+    .base-button {
+      padding: 8px 15px;
+      font-size: 15px;
+      margin-right: 20px;
+    }
+  }
+}

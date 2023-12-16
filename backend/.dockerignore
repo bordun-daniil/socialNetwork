@@ -1,0 +1,9 @@
+*.log
+*.md
+*.pot
+*.pyc
+*.sqlite3
+**/__pycache__/*
+**/static/*
+**/media/*
+env/

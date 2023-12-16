@@ -1,0 +1,14 @@
+.base-input {
+  width: fit-content;
+  background: none;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--light-grey);
+  color: var(--white);
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border-bottom: 2px solid var(--white);
+  }
+}

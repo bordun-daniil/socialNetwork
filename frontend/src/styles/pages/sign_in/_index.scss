@@ -1,0 +1,145 @@
+.sign-in__page {
+  .container {
+    padding: 120px 50px;
+  }
+
+  .circle-1 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 400px;
+    height: 200px;
+    background: var(--dark-grey);
+    border-radius: 100%;
+    animation: circle1Anim 16s infinite;
+  }
+
+  @keyframes circle1Anim {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(30px, 5px) scale(1.01);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  .circle-2 {
+    position: absolute;
+    top: -100px;
+    left: 110px;
+    width: 400px;
+    height: 210px;
+    border-radius: 100%;
+    background: var(--light-grey);
+    animation: circle2Anim 17s infinite;
+  }
+
+  @keyframes circle2Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(40px, 8px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .circle-3 {
+    position: absolute;
+    top: -100px;
+    left: 215px;
+    width: 400px;
+    height: 240px;
+    border-radius: 100%;
+    background: var(--grey);
+    border: 5px solid var(--orange);
+    animation: circle3Anim 18s infinite;
+  }
+
+  @keyframes circle3Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-10px, -13px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .circle-4 {
+    position: absolute;
+    left: -115px;
+    width: 520px;
+    height: 291px;
+    border-radius: 100%;
+    background: var(--grey);
+    border: 5px solid var(--orange);
+    bottom: -100px;
+    animation: circle4Anim 18s infinite;
+  }
+
+  @keyframes circle4Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-20px, 30px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .circle-5 {
+    position: absolute;
+    width: 600px;
+    height: 311px;
+    border-radius: 100%;
+    bottom: -165px;
+    background: var(--dark-grey);
+    right: -233px;
+    animation: circle5Anim 19s infinite;
+  }
+
+  @keyframes circle5Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-10px, -25px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .circle-6 {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background: var(--light-grey);
+    border-radius: 100%;
+    bottom: -335px;
+    left: -152px;
+    animation: circle6Anim 17s infinite;
+  }
+
+  @keyframes circle6Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(40px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}

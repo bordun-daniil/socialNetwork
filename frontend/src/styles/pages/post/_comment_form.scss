@@ -1,0 +1,28 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+
+  textarea {
+    color: var(--white);
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--light-grey);
+    font-size: 16px;
+
+    &:focus {
+      border-bottom: 2px solid var(--white);
+    }
+  }
+
+  button {
+    width: 100px;
+    margin-top: 10px;
+    background: var(--orange);
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+}

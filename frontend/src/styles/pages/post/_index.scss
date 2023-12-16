@@ -1,0 +1,30 @@
+@forward './comments';
+@forward './comment_form';
+
+.post__page {
+  padding-bottom: 55px;
+
+  .post-body {
+    p,
+    .like-button {
+      padding: 10px;
+    }
+
+    p {
+      color: var(--white);
+    }
+
+    .likes {
+      padding: 0 10px 10px;
+      color: var(--light-grey);
+    }
+
+    .user-link {
+      padding: 10px;
+    }
+
+    .comment-form {
+      padding: 10px;
+    }
+  }
+}

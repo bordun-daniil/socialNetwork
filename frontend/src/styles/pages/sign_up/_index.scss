@@ -1,0 +1,180 @@
+.sign-up__page,
+.sign-in__page {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+
+  .container {
+    padding: 100px 50px;
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: 40px;
+    z-index: 10;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    z-index: 10;
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 2px solid var(--light-grey);
+      margin-bottom: 40px;
+      font-size: 25px;
+      outline: none;
+      color: var(--white);
+      transition: all 0.6s ease;
+
+      &:focus {
+        border-bottom: 2px solid var(--white);
+      }
+
+      &:hover {
+        border-bottom: 2px solid var(--white);
+      }
+    }
+
+    button {
+      width: fit-content;
+      font-size: 30px;
+      background: var(--orange);
+      border: none;
+      border-radius: 10px;
+      color: var(--white);
+      padding: 10px 30px;
+    }
+  }
+
+  a {
+    color: var(--light-grey);
+    margin-top: 40px;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+.sign-up__page {
+  .circle-1 {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    border-radius: 100%;
+    top: -215px;
+    background: var(--dark-grey);
+    right: -240px;
+    animation: circle1Anim 17s infinite;
+  }
+
+  @keyframes circle1Anim {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(15px, 12px) scale(1.03);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  .circle-2 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border-radius: 100%;
+    top: -215px;
+    right: 35px;
+    background: var(--light-grey);
+    animation: circle2Anim 19s infinite;
+  }
+
+  @keyframes circle2Anim {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(20px, 7px);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  .circle-3 {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    border-radius: 100%;
+    background: var(--dark-grey);
+    bottom: -250px;
+    left: -187px;
+    animation: circle3Anim 18s infinite;
+  }
+
+  @keyframes circle3Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(10px, 15px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .circle-4 {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    border-radius: 100%;
+    bottom: -220px;
+    right: -187px;
+    background: var(--light-grey);
+    animation: circle4Anim 16s infinite;
+  }
+
+  @keyframes circle4Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-10px, -12px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .circle-5 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border-radius: 100%;
+    bottom: -220px;
+    right: -187px;
+    background: var(--grey);
+    border: 5px solid var(--orange);
+    animation: circle5Anim 20s infinite;
+  }
+
+  @keyframes circle5Anim {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-16px, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}

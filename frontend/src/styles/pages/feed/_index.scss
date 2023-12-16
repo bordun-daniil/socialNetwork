@@ -1,0 +1,50 @@
+.no-posts-message {
+  color: var(--light-grey);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 2rem;
+}
+
+.feed__page {
+  padding-bottom: 55px;
+
+  .posts-list {
+    .user-link {
+      padding: 10px;
+    }
+
+    .post {
+      border-bottom: 2px solid var(--dark-grey);
+
+      p {
+        color: var(--white);
+        padding: 10px;
+      }
+
+      .panel {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .like-button {
+          margin-right: 15px;
+        }
+
+        .comment-button {
+          fill: none;
+          stroke-width: 5px;
+          stroke: var(--white);
+          width: 45px;
+        }
+      }
+
+      .likes {
+        padding: 0 10px 10px;
+        color: var(--light-grey);
+      }
+    }
+  }
+}

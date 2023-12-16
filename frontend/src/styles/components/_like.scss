@@ -1,0 +1,12 @@
+.like-button {
+  svg {
+    fill: none;
+    stroke-width: 60px;
+    stroke: var(--white);
+    width: 40px;
+
+    polygon {
+      transform: translate(30px, 30px);
+    }
+  }
+}
